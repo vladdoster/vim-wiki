@@ -2,74 +2,74 @@
 
 ==== login to a container given only container name ====
 
-{{{bash
-docker exec -it `docker ps
-                 | sed -n '/<CONTAINER_NAME_HERE>/p' \
-                 | awk '{print $1}'` bash
-}}}
+  {{{bash
+  docker exec -it `docker ps
+                   | sed -n '/<CONTAINER_NAME_HERE>/p' \
+                   | awk '{print $1}'` bash
+  }}}
 
 ==== modify it to be your DB user ====
 
-{{{bash
-docker exec -it `docker ps \
-                 | sed -n '/<CONTAINER_NAME_HERE>/p' \
-                 | awk '{print $1}'` psql -U postgres
-}}}
+  {{{bash
+  docker exec -it `docker ps \
+                   | sed -n '/<CONTAINER_NAME_HERE>/p' \
+                   | awk '{print $1}'` psql -U postgres
+  }}}
 
 ==== stop all containers ====
 
-{{{bash
-docker kill $(docker ps -q)
-}}}
+  {{{bash
+  docker kill $(docker ps -q)
+  }}}
 
 ==== remove all containers ====
 
-{{{bash
-docker rm $(docker ps -a -q)
-}}}
+  {{{bash
+  docker rm $(docker ps -a -q)
+  }}}
 
 ==== remove all images ====
-
-{{{bash
-docker rmi $(docker images -q)
-}}}
+  {{{bash
+  docker rmi $(docker images -q)
+  }}}
+  
 ==== combined stop, remove containers, and remove images command ====
 
-{{{bash
-docker kill $(docker ps -q) --force; \
-docker rm $(docker ps -a -q) --force ; \
-docker rmi $(docker images -q) --force
-}}}
+  {{{bash
+  docker kill $(docker ps -q) --force; \
+  docker rm $(docker ps -a -q) --force ; \
+  docker rmi $(docker images -q) --force
+  }}}
 
 ==== run pgsql ====
 
-{{{yaml
-version: '3'
-services:
-  db:
-    image: postgres:9.6
-    network_mode: host
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - "5432:5432"
-    expose:
-      - "5432"
-}}}
+  {{{yaml
+  version: '3'
+  services:
+    db:
+      image: postgres:9.6
+      network_mode: host
+      environment:
+        - POSTGRES_DB=postgres
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+      ports:
+        - "5432:5432"
+      expose:
+        - "5432"
+  }}}
 
 ==== run pgadmin4 ====
-{{{bash
+  {{{bash
+  docker pull dpage/pgadmin4
 
-docker pull dpage/pgadmin4
-
-docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" \
-           -e "PGADMIN_DEFAULT_PASSWORD=password" \
-           --network="host" <container-id>
-}}}
+  docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" \
+             -e "PGADMIN_DEFAULT_PASSWORD=password" \
+             --network="host" <container-id>
+  }}}
 
 or if you are lazy
-{{{bash
-alias pgadmin4="docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" -e "PGADMIN_DEFAULT_PASSWORD=password" --network="host" `docker image ls | sed -n '/pgadmin4/p' | awk '{print $3}'`"
-}}}
+
+  {{{bash
+  alias pgadmin4="docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" -e "PGADMIN_DEFAULT_PASSWORD=password" --network="host" `docker image ls | sed -n '/pgadmin4/p' | awk '{print $3}'`"
+  }}}
