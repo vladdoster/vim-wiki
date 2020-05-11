@@ -1,18 +1,18 @@
 # Postgres DB
-==== urn on expanded form ====
-  {{{
+==== Enable expanded form ====
+  {{{pgsql
   \x on;
   }}}
 ====Connect to DB====
-  {{{
+  {{{pgsql
   \c DB_NAME;
   }}}
 ====List DBs====
-  {{{
+  {{{pgsql
   \l;
   }}}
 ====List tables====
-  {{{
+  {{{pgsql
   \dt;
   }}}
 ====List table data====
