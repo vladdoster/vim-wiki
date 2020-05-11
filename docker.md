@@ -2,12 +2,16 @@
 ------------------------------------------------------------
 login to a container given only container name
 ```sh
-docker exec -it `docker ps | sed -n '/<CONTAINER_NAME_HERE>/p' | awk '{print $1}'` bash
+docker exec -it `docker ps \
+                 | sed -n '/<CONTAINER_NAME_HERE>/p' \
+                 | awk '{print $1}'` bash
 ```
 
 modify it to be your DB user
 ```sh
-docker exec -it `docker ps | sed -n '/<CONTAINER_NAME_HERE>/p' | awk '{print $1}'` psql -U postgres
+docker exec -it `docker ps \
+                 | sed -n '/<CONTAINER_NAME_HERE>/p' \
+                 | awk '{print $1}'` psql -U postgres
 ```
 
 stop all containers
@@ -24,7 +28,9 @@ docker rmi $(docker images -q)
 ```
 combined stop, remove containers, and remove images command
 ```sh
-docker kill $(docker ps -q) --force; docker rm $(docker ps -a -q) --force ; docker rmi $(docker images -q) --force
+docker kill $(docker ps -q) --force; \
+docker rm $(docker ps -a -q) --force ; \
+docker rmi $(docker images -q) --force
 ```
 run pgsql
 ```yaml
@@ -46,9 +52,14 @@ run pgadmin4
 ```sh
 docker pull dpage/pgadmin4
 
-docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" -e "PGADMIN_DEFAULT_PASSWORD=password" --network="host" <container-id>
+docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" \
+           -e "PGADMIN_DEFAULT_PASSWORD=password" \
+           --network="host" <container-id>
 ```
 or if you are lazy
 ```sh
-alias pgadmin4="docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" -e "PGADMIN_DEFAULT_PASSWORD=password" --network="host" `docker image ls | sed -n '/pgadmin4/p' | awk '{print $3}'`"
+alias pgadmin4="docker run -e "PGADMIN_DEFAULT_EMAIL=dosterm@wit.edu" \
+                           -e "PGADMIN_DEFAULT_PASSWORD=password" \
+                           --network="host" \
+                           `docker image ls | sed -n '/pgadmin4/p' | awk '{print $3}'`"
 ```
