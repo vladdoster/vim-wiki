@@ -1,7 +1,5 @@
 === Topics ===
 
-[[Syntax]]
-
 == docker ==
 == git ==
 == databases ==
