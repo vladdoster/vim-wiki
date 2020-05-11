@@ -2,4 +2,4 @@
 
 ### See [index.wiki](index.wiki)
 
-**Note**: This repo is to be viewed using vimwiki. Github will not render the code snippets.
+**Note**: This repo is to be viewed using vimwiki.
