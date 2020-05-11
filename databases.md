@@ -1,26 +1,31 @@
 # Postgres DB
 Turn on expanded form
 
-```
+```pgsql
 \x on;
 ```
 
 Connect to DB
 
-```
+```pgsql
 \c DB_NAME;
 ```
 
 List DBs
-```
+```pgsql
 \l;
 ```
 
 list tables
-```
+```pgsql
 \dt;
 ```
 
 list table data
-- ```TABLE t_foobar;```
-- ```SELECT * FROM t_foobar;```
+```pgsql
+TABLE t_foobar;
+```
+
+```pgsql
+SELECT * FROM t_foobar;
+```
