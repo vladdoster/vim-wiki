@@ -1,9 +1,0 @@
-=== Pages: ===
-
-[[Syntax]]
-
-== docker ==
-
-== git ==
-
-== databases ==
