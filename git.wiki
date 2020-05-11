@@ -1,17 +1,21 @@
-= Git =
+= Docker =
 
-==== Rename git branch ====
+==== login to a container given only container name ====
+
 1. Rename branch locally
+
 {{{bash
 git branch -m old_branch new_branch
 }}}
 
 2. Delete the old branch
+
 {{{bash
 git push origin :old_branch
 }}}
 
 3. Push the new branch, set local branch to track the new remote
+
 {{{bash
 git push --set-upstream origin new_branch
 }}}
