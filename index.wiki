@@ -2,6 +2,6 @@
 
 [[Syntax]]
 
-== databases ==
-== docker ==
-== git ==
+[[databases]]
+[[docker]]
+[[git]]
