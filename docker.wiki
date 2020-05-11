@@ -1,5 +1,5 @@
-# docker - Docker image and container command line interface
-------------------------------------------------------------
+=== Docker ===
+
 login to a container given only container name
 ```sh
 docker exec -it `docker ps \
