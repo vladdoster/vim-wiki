@@ -1,25 +1,13 @@
 # Postgres DB
 ==== Enable expanded form ====
- {{{pgsql
  \x on;
- }}}
 ====Connect to DB====
- {{{pgsql
  \c DB_NAME;
- }}}
 ====List DBs====
- {{{pgsql
  \l;
- }}}
 ====List tables====
- {{{pgsql
  \dt;
- }}}
 ====List table data====
- {{{pgsql
- TABLE t_foobar;
- }}}
-
- {{{pgsql
+ 
+ TABLE t_foobar; 
  SELECT * FROM t_foobar;
- }}}
