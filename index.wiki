@@ -1,5 +1,0 @@
-=== Topics ===
-
-== docker ==
-== git ==
-== databases ==
