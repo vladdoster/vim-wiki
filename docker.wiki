@@ -29,10 +29,10 @@
   }}}
 
 ==== remove all images ====
+  
   {{{bash
   docker rmi $(docker images -q)
   }}}
-  
 ==== combined stop, remove containers, and remove images command ====
 
   {{{bash
