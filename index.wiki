@@ -1,5 +1,7 @@
-# Table of contents
+=== Table of contents ===
 
-[[databases]]
-[[docker]]
-[[git]]
+[[Syntax]]
+
+== databases ==
+== docker ==
+== git ==
