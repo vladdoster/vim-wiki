@@ -1,31 +1,25 @@
 # Postgres DB
-Turn on expanded form
+==== urn on expanded form ====
+  {{{
+  \x on;
+  }}}
+====Connect to DB====
+  {{{
+  \c DB_NAME;
+  }}}
+====List DBs====
+  {{{
+  \l;
+  }}}
+====List tables====
+  {{{
+  \dt;
+  }}}
+====List table data====
+  {{{pgsql
+  TABLE t_foobar;
+  }}}
 
-```pgsql
-\x on;
-```
-
-Connect to DB
-
-```pgsql
-\c DB_NAME;
-```
-
-List DBs
-```pgsql
-\l;
-```
-
-list tables
-```pgsql
-\dt;
-```
-
-list table data
-```pgsql
-TABLE t_foobar;
-```
-
-```pgsql
-SELECT * FROM t_foobar;
-```
+  {{{pgsql
+  SELECT * FROM t_foobar;
+  }}}
