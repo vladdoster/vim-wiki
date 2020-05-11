@@ -1,6 +1,4 @@
-# Knowledge base
-
-## Pages
+# Pages:
 
 - ### [docker](docker.md)
 - ### [git](git.md)
