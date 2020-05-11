@@ -1,21 +1,19 @@
-= Docker =
+= Git =
 
-==== login to a container given only container name ====
+==== rename a branch ====
 
 1. Rename branch locally
-
-{{{bash
-git branch -m old_branch new_branch
-}}}
+  {{{bash
+  git branch -m old_branch new_branch
+  }}}
 
 2. Delete the old branch
-
-{{{bash
-git push origin :old_branch
-}}}
-
+  {{{bash
+  git push origin :old_branch
+  }}}
 3. Push the new branch, set local branch to track the new remote
+  {{{bash
+  git push --set-upstream origin new_branch
+  }}}
 
-{{{bash
-git push --set-upstream origin new_branch
-}}}
+==== reset commit count ====
