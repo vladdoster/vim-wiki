@@ -1,4 +1,3 @@
-# Postgres DB
 ==== Enable expanded form ====
  \x on;
 ====Connect to DB====
