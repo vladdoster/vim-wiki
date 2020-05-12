@@ -16,3 +16,7 @@
   git push --set-upstream origin new_branch
   
 ==== reset commit count ====
+
+ Make a new branch from the first commit of master/whatever branch you want
+ 
+==== cherrypick certain commit ====
