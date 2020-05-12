@@ -7,6 +7,7 @@
                    | awk '{print $1}'` bash
 
 ==== modify it to be your DB user ====
+
  docker exec -it `docker ps \
                    | sed -n '/<CONTAINER_NAME_HERE>/p' \
                    | awk '{print $1}'` psql -U postgres

@@ -1,0 +1,5 @@
+= Linux =
+
+====How to patch using a .diff====
+
+ patch --merge -i <diff>
