@@ -1,4 +1,8 @@
-==== Rename a branch ====
+==== reset commit count ====
+
+ Make a new branch from the first commit of master/whatever branch you want
+
+====rename branch====
 
 1. Rename branch locally
   
@@ -11,9 +15,15 @@
 3. Push the new branch, set local branch to track the new remote
   
   git push --set-upstream origin new_branch
-
-==== reset commit count ====
+====git stash untracked files====
  
- Make a new branch from the first commit of master/whatever branch you want
+ git stash --keep-index 
+====git stash w/ message====
 
-==== cherrypick certain commit ====
+ git stash save “<stash_message>” 
+====set git pager====
+
+ git config --global core.pager cat
+====view git log====
+
+ git log --oneline --graph --all 
