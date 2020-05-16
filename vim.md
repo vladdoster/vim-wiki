@@ -1,4 +1,0 @@
-### Run current file from within vim
-```
-:!% 
-```
