@@ -2,6 +2,8 @@
 
 [[Syntax]]
 
+== DWM ==
+[[dwm]]
 == Databases ==
 [[databases]]
 == Docker ==
