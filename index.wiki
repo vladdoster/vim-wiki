@@ -2,15 +2,19 @@
 
 [[Syntax]]
 
-== DWM ==
-[[dwm]]
 == Databases ==
 [[databases]]
 == Docker ==
 [[docker]]
+== DWM ==
+[[dwm]]
 == Git ==
 [[git]]
 == Linux ==
 [[linux]]
+== Sed ==
+[[sed]]
+== Vim ==
+[[vim]]
 == Reading list ==
 [[reading_list]]

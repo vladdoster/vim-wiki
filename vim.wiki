@@ -1,0 +1,27 @@
+= Vim =
+
+====Move cursor line to top of screen====
+
+ zt
+
+====Move cursor line to middle of screen====
+
+ zz
+
+====Move cursor line to bottom of screen====
+
+ zb
+
+====Select current line====
+
+ viw
+
+====Surround n words with double quotes====
+Short for surround n words with "
+
+ ys3w"
+
+====Replace sybmols surrounding words====
+Short for change sybmol from " to '
+
+ cs"'
