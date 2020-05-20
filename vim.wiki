@@ -14,7 +14,7 @@
 
 ====Select current line====
 
- viw
+ V
 
 ====Surround n words with double quotes====
 Short for surround n words with "
