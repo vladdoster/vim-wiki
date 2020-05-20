@@ -25,3 +25,7 @@ Short for surround n words with "
 Short for change sybmol from " to '
 
  cs"'
+
+==== Run current file from within vim ====
+
+ :!%
