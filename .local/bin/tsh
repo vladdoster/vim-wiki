@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Create new shell script(s) with shebang and is executable')
+parser.add_argument("-s", "--shell", metavar="SHELL", type=str, nargs=1, help="The name of the shell to be used in shebang (default: %(default)s)", default="bash")
+parser.add_argument("FILE_NAME(S)", help="File name(s) that should be created")
+args = parser.parse_args()
