@@ -12,6 +12,8 @@
 [[git]]
 == Linux ==
 [[linux]]
+== Python ==
+[[python]]
 == Sed ==
 [[sed]]
 == Vim ==
