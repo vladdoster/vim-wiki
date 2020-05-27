@@ -29,3 +29,29 @@ Short for change sybmol from " to '
 ==== Run current file from within vim ====
 
  :!%
+
+==== fuGITive ====
+
+ leader gs
+
+stage file
+
+ a
+
+unstage file
+
+ u
+
+commit
+
+ leader gc
+
+pull
+
+ leader gv
+
+push
+
+ leader pg
+
+
