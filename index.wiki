@@ -8,6 +8,8 @@
 [[docker]]
 == DWM ==
 [[dwm]]
+== Find ==
+[[find]]
 == Git ==
 [[git]]
 == Keyboard ==
