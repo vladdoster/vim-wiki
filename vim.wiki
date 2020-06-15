@@ -1,5 +1,15 @@
 = Vim =
 
+====Macro operation====
+
+ q + <character to record macro on>
+
+ <perform macro>
+ 
+ q               #-> Escape macro recording
+ 
+ @ + <character> #-> perform macro
+
 ====Move cursor line to top of screen====
 
  zt
@@ -34,17 +44,17 @@ Short for change sybmol from " to '
 
 ## Basic commands
 
- :Git [args]              # does what you'd expect
+ :Git [args]              #-> does what you'd expect
 
 `~/.gitconfig` aliases are available.
 
- :Git! [args]             # same as before, dumping output to a tmp file
+ :Git! [args]             #-> same as before, dumping output to a tmp file
 
 ## Moving inside a repo.
 
- :Gcd [dir]               # :cd relative to the repository
+ :Gcd [dir]               #-> :cd relative to the repository
 
- :Glcd [dir]              # same as above, local to the current window
+ :Glcd [dir]              #-> same as above, local to the current window
 
 ## Blame
 
@@ -56,10 +66,10 @@ Short for change sybmol from " to '
 
 Working with the index
 
- :Gwrite                  # add
- :Gread                   # checkout
- :Gremove                 # rm
- :Gmove                   # mv
+ :Gwrite                  #-> add
+ :Gread                   #-> checkout
+ :Gremove                 #-> rm
+ :Gmove                   #-> mv
 
 in the `Gmove` context, `/` represents the root of the git repository.
 
@@ -81,7 +91,7 @@ in the `Gmove` context, `/` represents the root of the git repository.
 
 ## Diffs
 
- diffget [bufspec]        # `do` can be used instead (*d*iff *o*btain)
+ diffget [bufspec]        #-> `do` can be used instead (*d*iff *o*btain)
  diffput [bufspec]
  diffupdate
 
@@ -91,7 +101,7 @@ in the `Gmove` context, `/` represents the root of the git repository.
 
 ## Solving merge conflicts with 2-way diffs
 
- :Gdiff                   # on the file with the conflict
+ :Gdiff                   #-> on the file with the conflict
 
 ## Browsing the git object database
 
@@ -106,36 +116,36 @@ in the `Gmove` context, `/` represents the root of the git repository.
 
 ## Trees, commits and tags can be browsed too
 
- :Gedit SHA               # will open a buffer with the git object referenced by `SHA`
+ :Gedit SHA               #-> will open a buffer with the git object referenced by `SHA`
 
 ## History
 
-## Revisions of a file
+### Revisions of a file
 
- :Glog [args]             # opens a buffer with the revisions of the current file
+ :Glog [args]             #-> opens a buffer with the revisions of the current file
 
-## Move between revisions
+### Move between revisions
 
-`:cnext`, `:cprevious`, `:cfirst` and `:clast` can be used to
+ `:cnext`, `:cprevious`, `:cfirst` and `:clast` can be used to
 
- :Glog -10                # opens only the last 10 revisions
+ :Glog -10                #-> opens only the last 10 revisions
 
-## Commits
+### Commits
 
  :Glog --                 # load all commits into the quickfix list
  :Glog -- %               # load all commits that affected the current file into the quickfix list
 
 ## Searching
 
-## Working copy files
+### Working copy files
 
  :Ggrep 'whatever'
 
-## Index
+###  Index
 
  :Ggrep --cached 'whatever'
 
-## Branches
+##  Branches
 
  :Ggrep whatever branch   # search for `whatever` in `branch`
 
