@@ -1,7 +1,5 @@
 ===Table of contents===
 
-[[Syntax]]
-
 == Databases ==
 [[databases]]
 == Docker ==
