@@ -1,22 +1,25 @@
 = Vim =
 
 ====Spell check====
-
- leader + o   #-> Highlight possible mis-spellings
  
-Cursor over word
-
+ # Highlight possible mis-spellings
+ leader + o
+ 
+ # Cursor over word
  z + =        #-> Show list of possible replacement words
 
 ====Macro operation====
 
+ # start recording macro
  q + <character to record macro on>
 
  <perform macro>
  
- q               #-> Escape macro recording
+ # escape recording macro
+ q
  
- @ + <character> #-> perform macro
+ # perform macro
+ @ + <character>
 
 ====Move cursor line to top of screen====
 
@@ -35,13 +38,13 @@ Cursor over word
  V
 
 ====Surround n words with double quotes====
-Short for surround n words with "
 
+ # short for surround n words with "
  ys3w"
 
 ====Replace sybmols surrounding words====
-Short for change sybmol from " to '
 
+ # short for change sybmol from " to '
  cs"'
 
 ==== Run current file from within vim ====
