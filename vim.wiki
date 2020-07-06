@@ -1,5 +1,13 @@
 = Vim =
 
+====Spell check====
+
+ leader + o   #-> Highlight possible mis-spellings
+ 
+Cursor over word
+
+ z + =        #-> Show list of possible replacement words
+
 ====Macro operation====
 
  q + <character to record macro on>
