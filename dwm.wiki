@@ -1,9 +1,3 @@
 == Layouts ==
 Tile   		       : [tiled]      : Master on left, slaves on right
-B-stack		       : [b-stack]    : Master on top, slaves on bottom
-Spiral 		       : [fibonacci]  : Fibonacci spiral
-Dwindle		       : [dwindle]    : Decreasing in size right and leftward
-Deck   		       : [deck]       : Master on left, slaves in monocle-eque mode on right
 Monocle                : [monocle]    : All windows on top of eachother
-Center master 	       : [c-master]   : Master in middle, slaves on sides
-Center master floating : [c-f-master] : Same but master floats
