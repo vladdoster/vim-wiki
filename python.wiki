@@ -26,3 +26,11 @@ n: Continue execution until the next line in the current function is reached or 
 ====CSV to JSON====
 
  python -c "import csv,json;print json.dumps(list(csv.reader(open('csv_file.csv'))))"
+ 
+====pyenv issues====
+
+Python SSL extension isn't compiled
+
+ LDFLAGS=-L/usr/lib/openssl CFLAGS="-DOPENSSL_NO_SSL3 -I/usr/include/openssl" pyenv install -v <desired version>
+
+If Python2, install 2.7.13
