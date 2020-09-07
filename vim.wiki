@@ -3,9 +3,13 @@
 ====Install Vim 8====
 
  git clone https://github.com/vim/vim.git
+ 
  cd vim
+ 
  ./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-pythoninterp --enable-perlinterp --enable-luainterp
+ 
  make
+ 
  sudo make install
  
 ====Spell check====
