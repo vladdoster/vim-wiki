@@ -12,7 +12,6 @@
  make
  
  sudo make install
- 
 ====Spell check====
  
  # Highlight possible mis-spellings
