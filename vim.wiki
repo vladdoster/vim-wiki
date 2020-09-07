@@ -8,7 +8,7 @@
  make
  sudo make install
  
- ====Spell check====
+====Spell check====
  
  # Highlight possible mis-spellings
  leader + o
