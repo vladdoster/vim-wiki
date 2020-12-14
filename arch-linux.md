@@ -24,7 +24,7 @@ sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
 ## Rank mirrors for improved dl speeds
 
 ```bash
-pacman -S reflector rsync --noconfirmyes && \
+pacman -S reflector rsync --noconfirm && \
 reflector --ipv4 --fastest 20 --country "United States" --save /etc/pacman.d/mirrorlist
 ```
 
