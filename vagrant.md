@@ -16,6 +16,7 @@ Run the following command to load kext:
 
 ```bash
 $ sudo modprobe vboxnetadp
+$ sudo modprobe vboxnetflt 
 ```
 
 ### MacOS
