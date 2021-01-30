@@ -1,4 +1,6 @@
-# Unable to add new network interface
+# Vagrant
+
+## Unable to add new network interface
 
 ```console
 Progress state: NS_ERROR_FAILURE
@@ -10,13 +12,13 @@ VBoxManage: error: Context: "int handleCreate(HandlerArg*, int, int*)" at line 6
 
 Run the following command to load kext:
 
-## Linux
+### Linux
 
 ```bash
 $ sudo modprobe vboxnetadp
 ```
 
-## MacOS
+### MacOS
 
 ```bash
 $ sudo "/Library/Application Support/VirtualBox/LaunchDaemons/VirtualBoxStartup.sh" restart
