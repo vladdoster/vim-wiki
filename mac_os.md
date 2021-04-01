@@ -3,7 +3,7 @@
 ## Don't generate .DS_store
 
 ```bash
-defaults write com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 
 ## Recursive .DS_store removal
