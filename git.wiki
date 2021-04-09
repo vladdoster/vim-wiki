@@ -26,4 +26,8 @@
  git config --global core.pager cat
 ====view git log====
 
- git log --oneline --graph --all 
+ git log --oneline --graph --all
+
+====delete release w/ gh cli====
+
+ yes | gh release delete $(gh release list -L 1 | awk '{print $2}')
