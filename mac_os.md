@@ -20,4 +20,4 @@ find . -name ".DS_Store" -print -delete
   ```bash
   make && make install
   ```
-1. Rest is handled by (dotfiles)[https://github.com/vladdoster/dotfiles]
+1. Rest is handled by [dotfiles](https://github.com/vladdoster/dotfiles)
