@@ -1,12 +1,32 @@
-==== Enable expanded form ====
- \x on;
-====Connect to DB====
- \c DB_NAME;
-====List DBs====
- \l;
-====List tables====
- \dt;
-====List table data====
+# Databases
+
+## Enable expanded form
+
+```bash
+\x on;
+```
+
+## Connect to a database
+
+```bash
+\c DB_NAME;
+```
+
+## List databases
+
+```bash
+\l;
+```
+
+## List tables
+
+```bash
+\dt;
+```
+
+## Print a table
  
- TABLE t_foobar; 
- SELECT * FROM t_foobar;
+```bash
+TABLE t_foobar; 
+SELECT * FROM t_foobar;
+```
