@@ -1,10 +1,14 @@
 # Bash
 
-## Commands average run time
+## avg-time
 
-### USAGE: avg_time <times to run> <command>
+Calculate a commands mean runtime over N runs
+       
+```bash
+avg-time [N RUNS]... [COMMAND]...
+```
 
-Example:
+### Example:
 
 ```bash
 avg_time 5 sleep 1
@@ -13,7 +17,8 @@ real 1.000000
 user 0.000000
 sys 0.000000
 ```
-### code
+
+### Code
 	
 ```bash
 avg_time() {
