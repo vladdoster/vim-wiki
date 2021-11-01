@@ -5,14 +5,6 @@
 ### Usage: avg-time [TIMES TO RUN] [COMMAND]
 
 ```bash
-$ avg_time 5 sleep 1
-
-real 1.000000
-user 0.000000
-sys 0.000000
-```
-
-```bash
 avg_time() {
 	n=$1
 	shift
@@ -30,4 +22,12 @@ avg_time() {
                  if (ns>0) printf("sys %f\n",  sys/ns)
                }'
 }
+
+USAGE: avg_time <times to run> <command> ...
+
+avg_time 5 sleep 1
+
+real 1.000000
+user 0.000000
+sys 0.000000
 ```
