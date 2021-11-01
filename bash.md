@@ -2,7 +2,7 @@
 
 ## Commands average run time
 
-> USAGE: avg_time <times to run> <command> ...
+### USAGE: avg_time <times to run> <command> ...
 
 Example:
 
