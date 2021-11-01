@@ -1,3 +1,5 @@
-===ports program is listening on===
+## ports being listened on
 
-  sudo lsof -iTCP -sTCP:LISTEN | grep program
+```bash
+sudo lsof -iTCP -sTCP:LISTEN | grep <program>
+```
