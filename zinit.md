@@ -31,7 +31,7 @@ esac
 ### [argo cd](https://github.com/argoproj/argo-cd)
 
 ```zsh
-zinit for \
+zi for \
     as'completions' \
     atclone'
       ./argocd* completion zsh > _argocd' \
@@ -47,7 +47,8 @@ zinit for \
 ### [bat](https://github.com/sharkdp/bat)
 
 ```zsh
-zinit for \
+zi for \
+    from'gh-r' \
     sbin'**/bat -> bat' \
   @sharkdp/bat \
 ```
@@ -55,7 +56,8 @@ zinit for \
 ### [delta](https://github.com/dandavison/delta)
 
 ```zsh
-zinit for \
+zi for \
+    from'gh-r' \
     sbin'**/delta -> delta' \
   dandavison/delta
 ```
@@ -63,8 +65,9 @@ zinit for \
 ### [exa](https://github.com/ogham/exa)
 
 ```zsh
-zinit for \
-    sbin'**/exa -> exa'
+zi for \
+    from'gh-r' \
+    sbin'**/exa -> exa' \
     atclone'cp -vf completions/exa.zsh _exa'  \
   ogham/exa
 ```
@@ -74,17 +77,29 @@ zinit for \
 A simple, fast and user-friendly alternative to 'find'.
 
 ```zsh
-zinit for \
+zi for \
     as'command' \
-    from'gh-r' \
+    from'gh-r'  \
     sbin'**/fd -> fd' \
-	@sharkdp/fd
+  @sharkdp/fd
+```
+
+### [fx](https://github.com/antonmedv/fx)
+
+Command-line tool and terminal JSON viewer
+
+```zsh
+zi for \
+    as'command' \
+    from'gh-r'  \
+    sbin'**/fd -> fd' \
+  @antonmedv/fx
 ```
 
 ### fzf-bin
 
-```
-zinit for \
+```zsh
+zi for \
     as'command' \
     from'gh-r'  \
     sbin'fzf'   \
@@ -97,12 +112,12 @@ Compute various size metrics for a Git repository, flagging those that might
 cause problems.
 
 ```zsh
-zinit for \
+zi for \
     as'command'     \
     bpick"${bpick}" \
     from'gh-r'      \
     sbin'git-sizer' \
-	@github/git-sizer
+  @github/git-sizer
 ```
 
 ### [glow](https://github.com/charmbracelet/glow)
@@ -111,11 +126,11 @@ Glow is a terminal based markdown reader designed from the ground up to bring
 out the beauty—and power—of the CLI.
 
 ```zsh
-zinit for \
+zi for \
     as'command' \
     from'gh-r'  \
     sbin'glow'  \
-	charmbracelet/glow
+  charmbracelet/glow
 ```
 
 ### [grex](https://github.com/pemistahl/grex)
@@ -124,17 +139,17 @@ A command-line tool and library for generating regular expressions from
 user-provided test cases.
 
 ```zsh
-zinit for \
+zi for \
     from'gh-r'  \
     as'command' \
     sbin'grex'  \
-	pemistahl/grex
+  pemistahl/grex
 ```
 
 ### [homebrew](https://brew.sh/)
 
 ```zsh
-zinit for \
+zi for \
     as'null' \
     atclone'%atpull' \
     atpull'
@@ -148,13 +163,14 @@ zinit for \
     sbin'bin/brew' \
     src'brew.zsh' \
     wait \
-  Homebrew/brew
+  homebrew/brew
 ```
 
 ### [hyperfine](https://github.com/sharkdp/hyperfine)
 
 ```zsh
-zinit for \
+zi for \
+    from'gh-r' \
     sbin'**/hyperfine -> hyperfine' \
   @sharkdp/hyperfine
 ```
@@ -162,13 +178,14 @@ zinit for \
 ### [jq](https://github.com/stedolan/jq)
 
 ```zsh
-zinit for \
+zi for \
     atclone'
       autoreconf -fi \
       && ./configure --with-oniguruma=builtin \
       && make \
       && ln -sfv $PWD/jq.1 $ZPFX/man/man1' \
     as'null' \
+    from'gh-r' \
     if'(( ! ${+commands[jq]} ))' \
     lucid \
     sbin'jq' \
@@ -179,7 +196,7 @@ zinit for \
 ### [kubectx](https://github.com/ahmetb/kubectx)
 
 ```zsh
-zinit for \
+zi for \
     bpick'kubectx;kubens' \
     from'gh-r' \
     light-mode \
@@ -191,8 +208,8 @@ zinit for \
 ### [neovim](https://github.com/neovim/neovim)
 
 ```zsh
-zinit for \
-    bpick"${bpick}"           \
+zi for \
+    bpick"${bpick}" \
     sbin'**/bin/nvim -> nvim' \
   neovim/neovim
 ```
@@ -200,7 +217,8 @@ zinit for \
 ### [ripgrep](https://github.com/burntSushi/ripgrep)
 
 ```zsh
-zinit for \
+zi for \
+    from'gh-r' \
     sbin'**/rg -> rg' \
   BurntSushi/ripgrep
 ```
@@ -208,7 +226,7 @@ zinit for \
 ### [shfmt](https://github.com/mvdan/sh)
 
 ```zsh
-zinit for \
+zi for \
     bpick"${bpick}" \
     sbin'shfmt* -> shfmt' \
   @mvdan/sh
@@ -217,11 +235,13 @@ zinit for \
 ### [stow](https://github.com/aspiers/stow)
 
 ```zsh
-zinit for \
-    as'program' atpull'%atclone' atclone"
+zi for \
+    as'program' 
+    atpull'%atclone'
+    atclone"
       autoreconf -iv \
       && ./configure" \
     make'bin/stow' \
-    pick"bin/stow" \
+    pick'bin/stow' \
   @aspiers/stow
 ```
