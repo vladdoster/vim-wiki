@@ -36,3 +36,11 @@ sudo yum install -y \
   devtoolset-9 \
 && scl enable devtoolset-9 "${SHELL}"
 ```
+
+### IUS repository
+
+```bash
+sudo yum install -y \
+  https://repo.ius.io/ius-release-el7.rpm \
+  https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+```
