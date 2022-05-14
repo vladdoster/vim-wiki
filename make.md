@@ -9,7 +9,7 @@ install:
     echo "$$(OPT) to install"
 ```
 
-### Pass arguments to a Make target
+## Pass arguments to a Make target
 
 Method 1:
 
