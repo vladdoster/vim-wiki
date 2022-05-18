@@ -34,7 +34,7 @@ docker rm $(docker ps -a -q)
 
 ```bash
 docker rmi $(docker images -q)
-````
+```
 
 ## remove containers, and remove images command
 
