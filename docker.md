@@ -26,7 +26,7 @@ docker kill $(docker ps -q)
 
 ## Remove all containers
 
-````bash
+```bash
 docker rm $(docker ps -a -q)
 ```
 
