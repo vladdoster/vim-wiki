@@ -9,7 +9,7 @@ docker run --interactive --tty --security-opt seccomp:unconfined ubuntu:latest b
 ## login to a container given only container name
 
 ```bash
-docker exec -it $(docker ps | sed -n '/<CONTAINER_NAME_HERE>/p' \  | awk '{print $1}') bash
+docker exec -it $(docker ps | sed -n '/<CONTAINER_NAME_HERE>/p' | awk '{print $1}') bash
 ```
 
 ## modify it to be your DB user
