@@ -39,3 +39,14 @@ avg_time() {
                }'
 }
 ```
+
+## Silence stdout
+
+```bash
+scriptname >/dev/null
+```
+
+## Silence stdout && stderr
+
+```bash
+scriptname &>/dev/null
