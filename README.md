@@ -1,12 +1,41 @@
 # Personal knowledge base using [vimwiki](https://github.com/vimwiki/vimwiki)
 
-#### useful commands I seem to use alot
+Useful information and code snippets  
 
-### See [index.wiki](index.wiki)
+## Table of contents
+
+- [bash.md](./bash.md)
+- [centOS.md](./centOS.md)
+- [databases.md](./databases.md)
+- [docker.md](./docker.md)
+- [dwm.md](./dwm.md)
+- [find.md](./find.md)
+- [git.md](./git.md)
+- [github.md](./github.md)
+- [golang.md](./golang.md)
+- [index.md](./index.md)
+- [linux-arch.md](./linux-arch.md)
+- [linux.md](./linux.md)
+- [mac_os.md](./mac_os.md)
+- [make.md](./make.md)
+- [npm.md](./npm.md)
+- [proxmox.md](./proxmox.md)
+- [python.md](./python.md)
+- [reading_list.md](./reading_list.md)
+- [readme-snippets](./readme-snippets)
+- [sed.md](./sed.md)
+- [ssh.md](./ssh.md)
+- [sys_config.md](./sys_config.md)
+- [testing.md](./testing.md)
+- [unix_networking.md](./unix_networking.md)
+- [vagrant.md](./vagrant.md)
+- [vim.md](./vim.md)
+- [zinit.md](./zinit.md)
+
 
 **Note**: This repo is to be viewed using vimwiki.
 
-## Organizations contributed to
+## Open source contributions
 
 | Organization |
 | ------------ |
