@@ -1,4 +1,4 @@
-# Personal knowledge base using [vimwiki](https://github.com/vimwiki/vimwiki)
+# Knowledge base via [vimwiki](https://github.com/vimwiki/vimwiki)
 
 Useful information and code snippets  
 
