@@ -1,10 +1,19 @@
-= Linux =
+# Linux
 
-====patch using a .diff====
+## apply patch via a `.diff` file
 
- patch --merge -i <diff>
+```bash
+patch --merge -i <diff>
+```
 
+## create soft link
+ 
+```bash 
+ln -s `<real>` `<to create>`
+```
 
-====create soft link====
+## add non-standard shell to `/etc/shells`
 
- ln -s <real> <to create>
+```bash
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+```
