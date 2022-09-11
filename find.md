@@ -14,11 +14,12 @@ find . -depth -name "*.sh" -exec sh -c 'f="{}"; mv -- "$f" "${f//_/-}"' \;
 
 ## use `>` in an xargs command
 
-Note: Do not make the mistake of doing thIis:
-
-```bash
-sh -c "grep ABC {} > {}.out"
-```
+> **Note**
+> Do not make the mistake of doing thIis:
+>
+> ```bash
+> sh -c "grep ABC {} > {}.out"
+> ```
 
 It will error in alot of conditions (i.e., funky filenames, impossible to quote right). 
 
