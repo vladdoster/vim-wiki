@@ -20,8 +20,8 @@ find . -depth -name "*.sh" -exec sh -c 'f="{}"; mv -- "$f" "${f//_/-}"' \;
 > ```bash
 > sh -c "grep ABC {} > {}.out"
 > ```
-
-It will error in alot of conditions (i.e., funky filenames, impossible to quote right). 
+>
+> It will error in alot of conditions (i.e., funky filenames, impossible to quote right). 
 
 `{}` must be a separate argument to the command to avoid code injection bugs.
 
