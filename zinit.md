@@ -6,12 +6,12 @@ Last updated: 01/01/2022
 
 ## Setup
 
-Most if not all of the programs require `zinit-annex-gem-bin-node`.
+Most if not all of the programs require -zinit-annex-gem-bin-node`.
 
 Add the following snippet as the first plugin in your configuration:
 
 ```zsh
-zinit light-mode for zdharma-continuum/zinit-annex-bin-gem-node
+zinit light-mode for zdharma-continuum-zinit-annex-bin-gem-node
 ```
 
 The following snippet sets a variable to determine correct binary to download. It isn't requred, but
