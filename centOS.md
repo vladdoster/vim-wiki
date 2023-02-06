@@ -44,3 +44,9 @@ sudo yum install -y \
   https://repo.ius.io/ius-release-el7.rpm \
   https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
+
+### CentOS extras repository
+
+```bash
+sudo yum-config-manager --add http://mirror.centos.org/centos/7/extras/x86_64/
+```
