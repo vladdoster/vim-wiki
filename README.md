@@ -4,6 +4,7 @@ Useful information and code snippets
 
 ## Table of contents
 
+- [apple-tv.md](./apple-tv.md)
 - [bash.md](./bash.md)
 - [centOS.md](./centOS.md)
 - [databases.md](./databases.md)
@@ -25,6 +26,7 @@ Useful information and code snippets
 - [readme-snippets](./readme-snippets)
 - [sed.md](./sed.md)
 - [ssh.md](./ssh.md)
+- [sudo.md](./sudo.md)
 - [sys_config.md](./sys_config.md)
 - [testing.md](./testing.md)
 - [unix_networking.md](./unix_networking.md)
