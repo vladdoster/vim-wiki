@@ -1,5 +1,16 @@
 # Docker
 
+## Restart Docker daemon on macOS
+
+`-F`: open application with fresh state
+`-b`: specify application bundle identifier
+`-g`: do not bring application to foreground
+`-n`: always open new instance of application
+
+```bash
+open -F -g -n -b com.docker.docker
+```
+
 ## Ubuntu GPG un-signed
 
 ```bash
