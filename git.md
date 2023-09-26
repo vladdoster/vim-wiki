@@ -1,37 +1,56 @@
-==== reset commit count ====
+# Git
 
- Make a new branch from the first commit of master/whatever branch you want
-
-====rename branch====
+## rename branch
 
 1. Rename branch locally
-  
-  git branch -m old_branch new_branch
-  
+
+```bash  
+git branch -m old_branch new_branch
+```
+
 2. Delete the old branch
 
-  git push origin :old_branch
+```bash
+git push origin :old_branch
+```
 
 3. Push the new branch, set local branch to track the new remote
-  
-  git push --set-upstream origin new_branch
-====git stash untracked files====
- 
- git stash --keep-index 
-====git stash w/ message====
 
- git stash save “<stash_message>” 
-====set git pager====
+```bash  
+git push --set-upstream origin new_branch
+```
 
- git config --global core.pager cat
-====view git log====
+## git stash untracked files
 
- git log --oneline --graph --all
+```bash
+git stash --keep-index 
+```
 
-====delete release w/ gh cli====
+## git stash w/ message
 
- yes | gh release delete $(gh release list -L 1 | awk '{print $2}')
+```bash
+git stash save “<stash_message>” 
+```
 
+## set git pager
+
+```bash
+git config --global core.pager cat
+```
+
+## view git log
+
+```bash
+git log --oneline --graph --all
+```
+
+## delete release w/ gh cli====
+
+```bash
+yes | gh release delete $(gh release list -L 1 | awk '{print $2}')
+```
+
+## compile git
 
 ```
 #!/bin/bash
