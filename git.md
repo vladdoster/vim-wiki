@@ -50,6 +50,12 @@ git log --oneline --graph --all
 yes | gh release delete $(gh release list -L 1 | awk '{print $2}')
 ```
 
+## unshallow a git repository
+
+```bash
+git remote set-branches origin '*'
+```
+
 ## compile git
 
 ```
