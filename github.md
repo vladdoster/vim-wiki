@@ -32,22 +32,47 @@ Displayed with distinctive colors and icons to indicate the importance of the co
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
+```md
+> [!NOTE]  
+> 
+```
+
 ### tip
 
 > [!TIP]
 > Optional information to help a user be more successful.
+
+```md
+> [!TIP]  
+> 
+```
 
 ### important
 
 > [!IMPORTANT]  
 > Crucial information necessary for users to succeed.
 
+```md
+> [!IMPORTANT]  
+> 
+```
+
 ### warning
 
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
 
+```md
+> [!WARNING]  
+> 
+```
+
 ### caution
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+
+```md
+> [!CAUTION]  
+> 
+```
