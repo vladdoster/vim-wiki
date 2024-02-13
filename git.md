@@ -58,7 +58,7 @@ git remote set-branches origin '*'
 
 ## compile git
 
-```
+```bash
 #!/bin/bash
 
 VERSION="2.42.0"
@@ -91,4 +91,16 @@ echo "Started in $INIT_DIR"
 )
 rm -rf $BUILD_DIR
 exit 0
+```
+
+## list tracked files by age
+
+```bash
+git log --pretty=format: --date-order --name-only --diff-filter=A | sed '/^$/d'
+```
+
+## list modified files for each commit
+
+```bash
+git log --pretty=reference --name-status --date-order --diff-filter=A
 ```
