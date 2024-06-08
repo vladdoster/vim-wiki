@@ -40,3 +40,11 @@ account    required       pam_permit.so
 password   required       pam_deny.so
 session    required       pam_permit.so
 ```
+
+## Safari Picture in Picture bookmark
+
+Create bookmark and set address to Javascript snippet:
+
+```js
+javascript:(%20function(){%20var%20video%20=%20document.getElementsByTagName('video')[0];%20video.webkitSetPresentationMode(video.webkitPresentationMode%20===%20"picture-in-picture"%20?%20"inline"%20:%20"picture-in-picture");%20}%20)()
+```
