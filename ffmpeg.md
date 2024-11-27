@@ -11,3 +11,9 @@ ffmpeg -i "$input_file" -c copy -an "$output_file"
 ```zsh
 for f in *.mp4; ffmpeg -i "$f" -c copy -an "silent-$f";
 ```
+
+## download m3u8 stream
+
+```zsh
+ffmpeg -i <url.m3u8> -c copy <output.mkv>
+```
