@@ -23,6 +23,23 @@ else
 fi
 ```
 
+## Delete selected repository forks
+
+> [!NOTE]
+> Requires `fzf`, `gh`, & `zsh`
+
+```zsh
+deleteForks() {
+  local -a repos=($(gh repo list --fork --jq '.[].nameWithOwner' --json nameWithOwner --limit 200 | fzf --multi)) 
+  print -l "Selected ${#repos} repos"
+  local repo
+  for repo in ${(@)repos}
+  do
+    print "deleting ${repo}" && gh repo delete --yes "${repo}"
+  done
+}
+```
+
 ## markdown extensions
 
 Displayed with distinctive colors and icons to indicate the importance of the content
