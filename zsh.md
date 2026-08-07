@@ -66,4 +66,10 @@ c => 77 88 99
     done
 }
 ```
+## Fix `compinit: insecure directories, run compaudit for list.`
+
+Remove group-write permissions, run 
+
+```zsh
+compaudit | xargs chmod g-w
 ```
